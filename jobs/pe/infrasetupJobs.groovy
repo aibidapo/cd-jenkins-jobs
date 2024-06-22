@@ -13,7 +13,7 @@ job("shout") {
     }
     label("slave-node")
     steps{
-        shell(readFileFromWorkspace("resoures/db_refresh/pe/shout.sh"))
+        shell(readFileFromWorkspace("resources/db_refresh/pe/shout.sh"))
     }
 
 
