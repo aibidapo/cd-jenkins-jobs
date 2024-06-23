@@ -11,7 +11,7 @@ job("scream") {
         }
 
     }
-    label("slave-node")
+    label("maven")
     steps{
         shell(readFileFromWorkspace("resources/db_refresh/pp/scream.sh"))
     }

@@ -11,7 +11,7 @@ job("shout") {
         }
 
     }
-    label("slave-node")
+    label("maven")
     steps{
         shell(readFileFromWorkspace("resources/db_refresh/pe/shout.sh"))
     }
